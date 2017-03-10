@@ -3,9 +3,6 @@
          xsi:noNamespaceSchemaLocation="ehcache.xsd" updateCheck="true" monitoring="autodetect" dynamicConfig="true">
     <cache name="userCache"
            maxElementsInMemory="500"
-           maxElementsOnDisk="1000"
            memoryStoreEvictionPolicy="LFU"
-           eternal="false"
-           overflowToDisk="false"
            timeToLiveSeconds="1440" />
 </ehcache>

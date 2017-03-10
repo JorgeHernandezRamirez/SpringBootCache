@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/cache")
-public class CacheResource {
+public class CacheController {
 
     @Autowired
     private CacheManager cacheManager;
