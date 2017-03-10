@@ -20,7 +20,7 @@ public class UserDummyService implements IUserService{
     }
 
     @Override
-    @Cacheable(value = "userCache")
+    @Cacheable(value = "userCache", keyGenerator = "keySignatureGenerator")
     public List<UserDto> getUsers() {
         LOGGER.info("Obteniendo todos los usuarios del sistema");
         return Arrays.asList(new UserDto("1", "jorge", "hernandez"),

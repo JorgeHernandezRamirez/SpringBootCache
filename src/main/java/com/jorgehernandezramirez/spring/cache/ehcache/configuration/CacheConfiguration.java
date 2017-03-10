@@ -5,9 +5,9 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @EnableCaching
-public class EhCacheConfiguration {
+public class CacheConfiguration {
 
-    public EhCacheConfiguration() {
+    public CacheConfiguration() {
         //Para Spring
     }
 }
